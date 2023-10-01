@@ -25,6 +25,12 @@ const Navbar = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  const handleClick = (nav) => {
+    console.log(nav.id);
+    if(nav.id = "#resume"){
+      window.location.href = 'https://drive.google.com/file/d/1lG07X-GqZakwOqO77f-eDzzYUt0ANOaz/view?usp=sharing';
+    }
+  }
   return (
     <nav
       className={`${
@@ -56,7 +62,7 @@ const Navbar = () => {
               className={`${
                 active === nav.title ? "text-white" : "text-secondary"
               } hover:text-white text-[18px] font-medium cursor-pointer`}
-              onClick={() => setActive(nav.title)}
+              onClick={() => {setActive(nav.title); handleClick(nav);}}
             >
               <a href={`#${nav.id}`}>{nav.title}</a>
             </li>
@@ -68,7 +74,7 @@ const Navbar = () => {
             src={toggle ? close : menu}
             alt='menu'
             className='w-[28px] h-[28px] object-contain'
-            onClick={() => setToggle(!toggle)}
+            onClick={() => {setToggle(!toggle);handleClick(nav);}}
           />
 
           <div
@@ -86,9 +92,10 @@ const Navbar = () => {
                   onClick={() => {
                     setToggle(!toggle);
                     setActive(nav.title);
+                    handleClick(nav);
                   }}
                 >
-                  <a href={`#${nav.id}`}>{nav.title}</a>
+                  <a href={nav.title}>{nav.title}</a>
                 </li>
               ))}
             </ul>
