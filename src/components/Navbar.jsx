@@ -27,7 +27,8 @@ const Navbar = () => {
 
   const handleClick = (nav) => {
     console.log(nav.id);
-    if(nav.id = "#resume"){
+    if(nav.id == "resume"){
+      console.log("resume detected")
       window.location.href = 'https://drive.google.com/file/d/1lG07X-GqZakwOqO77f-eDzzYUt0ANOaz/view?usp=sharing';
     }
   }

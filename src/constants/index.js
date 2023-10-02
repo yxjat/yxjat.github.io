@@ -147,7 +147,7 @@ import {
       company_name: "Technische Universitat Braunschweig, Germany ",
       icon: tu,
       iconBg: "#FFFFFF",
-      date: "Nov 2021 - Jun 2025",
+      date: "Oct 2023 - March 2024",
       points: [
         "Semester exchange at TU Braunschweig",
       ],
@@ -157,7 +157,7 @@ import {
       company_name: "Indian Institute of Technology, Mandi",
       icon: iit,
       iconBg: "#000000",
-      date: "Oct 2023 - March 2024",
+      date: "Nov 2021 - Jun 2025",
       points: [
         "Relevent Courses: Data Structures and Algorithms, DataScience 1,2,3, Computer Organisations, Mathematical Foundataion of CS",
         "Developed Softwares for institutional use - IIT Mandi App"
